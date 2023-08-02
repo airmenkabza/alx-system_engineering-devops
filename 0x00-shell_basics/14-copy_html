@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Check if the parent directory exists
+if [ -d "../" ]; then
+    # Copy HTML files to the parent directory, only if they don't exist or are newer
+    find . -maxdepth 1 -name '*.html' -newer "../" -exec cp -u {} "../" \;
+    echo "HTML files copied successfully."
+else
+    echo "Parent directory does not exist."
+fi
