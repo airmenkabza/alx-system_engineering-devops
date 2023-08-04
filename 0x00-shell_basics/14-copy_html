@@ -1,3 +1,2 @@
 #!/bin/bash
-
 find . -maxdepth 1 -name '*.html' -newer ../ -ls 2>/dev/null
