@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -maxdepth 1 -name '*.html' -newer ../ -ls 2>/dev/null | awk '{print $3, $4, $5, $6,$2,$12}'
+find . -maxdepth 1 -name '*.html' -newer ../ -ls 2>/dev/null | awk '{print $3, $4, $5, $6,$2,$10}'
