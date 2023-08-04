@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -A1 | sort -d --ignore='.*' | tr '\n' ',' | sed 's/,$/\//'
+ls -d ./* .[^.]* | sort -d | tr '\n' ',' | sed 's/,$/\//'
