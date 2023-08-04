@@ -1,0 +1,2 @@
+#!/bin/bash
+[ -e "olleh" ] && mode=$(stat -c %a olleh) && [ -e "hello" ] && chmod "$mode" "hello"
