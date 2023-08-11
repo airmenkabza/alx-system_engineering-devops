@@ -1,0 +1,2 @@
+#!/bin/bash
+while read line; do read line; echo $line; done
