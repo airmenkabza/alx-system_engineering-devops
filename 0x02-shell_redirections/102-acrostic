@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Read the first letter of each line
+message=""
+while read -r line || [[ -n "$line" ]]; do
+    first_letter=$(echo "$line" | cut -c 1)
+    message="$message$first_letter"
+done < "${1:-/dev/stdin}"
+
+# Print the decoded message with a new line
+echo -e "$message"

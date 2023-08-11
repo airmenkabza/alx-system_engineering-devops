@@ -1,0 +1,4 @@
+#!/bin/bash
+readarray -t lines < iacta
+last_line=${lines[-1]}
+echo "$last_line" >> iacta
